@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
+    <header>
+<section>
+   <div class="flex justify-between">
+    <div class="flex">
+        <div class="h-10 w-10 p-2 bg-lime-400 rounded-full -rotate-45">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            
+        </div>
+        <div><h2 class=" px-2 text-3xl font-bold ">Rinterio</h2></div>
+    </div>
+    <div>
+        <nav class="hidden lg:flex justify-between">
+            <div>
+                <ul class="lg:flex justify-between">
+                    <li><button class="lg:mx-2 p-2 text-black font-semibold">Home</button></li>
+                    <li><button class="lg:mx-2 p-2 text-lg text-gray300">Service</button></li>
+                    <li><button class="lg:mx-2 p-2 text-lg text-gray300">Portfolio</button></li>
+                    <li><button class="lg:mx-2 p-2 text-lg text-gray300">blog</button></li>
+                    
+                    <li><button class="lg:mx-2 p-2 text-lg text-gray300">Contact us</button></li>
+                </ul>
+            </div>
+            <div class="lg:flex justify-between">
+                <div class="lg:h-10 w-10 mx-2 p-2 bg-white-400 rounded-full">
+                    <svg class="lg:fill-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> 
+                    
+                </div>
+                <div class="lg:h-10 w-10 mx-3 p-2 bg-white-400 rounded-full">
+                    
+                    <svg class="lg:fill-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20l44 0 0 44c0 11 9 20 20 20s20-9 20-20l0-44 44 0c11 0 20-9 20-20s-9-20-20-20l-44 0 0-44c0-11-9-20-20-20s-20 9-20 20l0 44-44 0c-11 0-20 9-20 20z"/></svg>
+                </div>
+
+               <div class="lg:flex justify-between">
+                <div>
+                    <button class="h-16 w-52 text-black text-2xl bg-lime-400 rounded-l-xl">Book Consult
+                    </button>
     
+                </div>
+                <div class="lg:bg-lime-400 rounded-tr-xl rounded-br-xl"><svg class=" lg:h-10 w-10 p-1 mr-4 my-3 -rotate-45 fill-black bg-white-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+                </div>
+               </div>
+            </div>
+        </nav>
+    </div>
+    <div class="h-10 w-10 lg:invisible">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+    </div>
+   </div>
+   <div class="center">
+    <img class="pl-20 lg:ml-20 pl-40" src="image/banner.png" alt="beautiful house">
+   </div>
+   <div>
+    <h1 class="p-6 font-bold text-4xl text-center lg:text-6xl ">
+        A barn house of this design has a<br> 
+        striking appearanc
+    </h1>
+    <p class="p-8 text-lg text-center text-wrap">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
+        accents, and large windows that flood the space with natural light
+    </p>
+    
+   <div class="lg:ml-40">
+    <div class="lg:ml-20 pl-40 flex">
+        <div>
+            <button class="h-16 w-52 text-black text-2xl text-bold bg-lime-100 rounded-l-xl">View Details
+            </button>
+
+        </div>
+        <div class="lg:bg-lime-100 rounded-tr-xl rounded-br-xl"><svg class=" lg:h-10 w-10 p-1 mr-4 my-3 -rotate-45 fill-lime-300 bg-white-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+        </div>
+       </div>
+   </div>
+   </div>
+   
+</section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
